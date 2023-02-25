@@ -1,0 +1,47 @@
+.cartModal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 800px;
+  min-height: 500px;
+  scroll-behavior: smooth;
+  background-image: url("https://blogassets.airtel.in/wp-content/uploads/2022/10/6.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(3, 211, 141);
+  /* text-align: center; */
+  border-radius: 3px;
+}
+
+.cartModalHeading {
+  text-transform: uppercase;
+}
+
+.ItemContainer {
+  max-height: 100px;
+  overflow-x: auto;
+}
+
+.cartTotalPrice {
+  color: red;
+  font-size: 50px;
+}
+
+.cartTotalPriceContainer {
+  background-color: rgb(36, 3, 3);
+  display: flex;
+  justify-content: space-around;
+}
+
+.closeIcon {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+.closeIcon:hover {
+  fill: rgb(146, 10, 5);
+}

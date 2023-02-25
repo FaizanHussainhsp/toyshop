@@ -1,0 +1,25 @@
+.itemDetail {
+  display: flex;
+  justify-content: space-around;
+  opacity: 0.9;
+  background-color: burlywood;
+  color: white;
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.btn {
+  margin: 0 5px;
+  outline: 1px solid saddlebrown;
+  border: none;
+  background-color: transparent;
+  padding: 0 10px;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+.btn:hover {
+  background-color: saddlebrown;
+  color: #ffffff;
+}
