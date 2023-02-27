@@ -57,6 +57,10 @@ export const Form = (props) => {
   const onSubmitHandler = (event) => {
     event.preventDefault();
 
+    if (uname.uname === "" && streetAddress.streetAddress === "") {
+      dispatchUName({ type: "uNameOnEmptySubmit" });
+      dispatchStreetAddress({ type: "addressOnEmptySubmit" });
+    }
     if (uname.uname === "") {
       dispatchUName({ type: "uNameOnEmptySubmit" });
       return;
@@ -107,7 +111,7 @@ export const Form = (props) => {
     <form onSubmit={onSubmitHandler} className={classes.form}>
       <Input
         type="text"
-        value={uname.uname}
+        // value={uname.uname}
         onChange={userNameOnStrokeHandler}
         placeholder="userName"
         onBlur={userNameOnBlurHandler}
@@ -117,7 +121,7 @@ export const Form = (props) => {
       {uname.isValidOnBlur ? "" : "uName should not be empty"}
       <Input
         type="text"
-        value={streetAddress.streetAddress}
+        // value={streetAddress.streetAddress}
         onChange={streetOnStrokeHandler}
         onBlur={streetOnBlurHandler}
         placeholder="Street Address"
